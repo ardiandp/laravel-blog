@@ -17,7 +17,13 @@ use \App\Http\Controllers\SiswaController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('beranda');
+});
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/contoh', function () {
+    return view('layout/tengah');
 });
 
 Route::resource('post', \App\Http\Controllers\PostController::class); // tambahkan ini
